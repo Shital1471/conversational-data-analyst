@@ -9,11 +9,16 @@ A production-grade, full-stack banking analytics web application that enables bu
 The **Conversational Data Analyst** transforms plain English business inquiries into verified, real-time relational analytics across multi-month core banking ledgers. Rather than generating hallucinated or cosmetic mock metrics, every response is backed by deterministic SQL execution against a relational SQLite database with strict foreign key constraints.
 
 ### Core Capabilities
+- **Dual-View Architecture:** Seamlessly toggle between conversational **Chat Analyst** and a full-screen **Executive Dashboard** with live telemetry widgets.
+- **Dark & Light Mode:** Executive dark theme and crisp enterprise light theme with automatic system preference detection and instant toggle.
+- **Interactive Multi-View Charts:** Toggle dynamically between Bar, Area Trend with gradient fills, and Stacked Composed views right on every chart card.
+- **Premium KPI Cards:** Glassmorphic cards with dynamic SVG trend sparklines, progress bars for conversion/rejection ratios, and hover elevations.
+- **Smart Filters Bar:** Slice and dice queries by customer segment (Retail, SME, Corporate), region, and analytical focus with one-click report generation.
+- **True CSV File Export & Clipboard Copy:** Direct `.csv` file generation with automatic timestamping, plus copy-to-clipboard with instant toast notifications.
 - **Relational Data Foundation:** Queries across four connected banking datasets: `customers`, `branches`, `onboarding_applications`, and `transactions`.
 - **Natural Language Query Engine:** Modular query pipeline with intent classification, parameter extraction, and audited SQL execution.
-- **Enterprise Visualizations:** Dynamic Recharts visualizations (multi-series bar charts, horizontal bars, timeline trends, and pie/donut distributions).
-- **Executive Summaries & KPIs:** High-level narrative answers coupled with automated metric cards (approval/rejection ratios, turnover totals, and segment leaders).
-- **Auditable & Exportable:** Full transparency with one-click audited SQL inspection, clipboard copying of executive summaries, and CSV data export.
+- **Executive Summaries & KPIs:** High-level narrative answers coupled with automated metric cards.
+- **Auditable & Safe:** Full transparency with one-click audited SQL inspection, zero unrestricted raw AI SQL execution.
 
 ---
 
