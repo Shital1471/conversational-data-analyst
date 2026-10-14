@@ -1,0 +1,27 @@
+{
+  "name": "conversational-data-analyst",
+  "version": "1.0.0",
+  "description": "Full-Stack Conversational Banking Data Analyst",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "seed": "npm run seed --prefix server",
+    "test": "npm run test --prefix server",
+    "build": "npm run build --prefix server && npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "keywords": [
+    "banking",
+    "analytics",
+    "conversational-ai",
+    "sqlite",
+    "react",
+    "typescript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
