@@ -115,14 +115,18 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Dark / Light Mode Toggle */}
         <button
           onClick={toggleTheme}
-          className="p-2 rounded-xl text-slate-600 dark:text-slate-300 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition focus:outline-none"
+          className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-xl text-slate-700 dark:text-slate-200 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 border border-slate-200 dark:border-slate-700 transition focus:outline-none"
           title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
+          aria-label="Toggle dark/light theme"
         >
           {theme === 'dark' ? (
             <Sun className="w-4 h-4 text-amber-400 transition-transform rotate-0 hover:rotate-45" />
           ) : (
             <Moon className="w-4 h-4 text-indigo-600 transition-transform -rotate-12 hover:rotate-0" />
           )}
+          <span className="text-xs font-semibold hidden md:inline">
+            {theme === 'dark' ? 'Light' : 'Dark'}
+          </span>
         </button>
 
         {/* Clear Conversation */}

@@ -63,10 +63,12 @@ export const SmartFilterBar: React.FC<SmartFilterBarProps> = ({
           <select
             value={filters.segment}
             onChange={(e) => onChange({ ...filters, segment: e.target.value })}
-            className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition"
+            className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition cursor-pointer"
           >
             {segments.map((s) => (
-              <option key={s} value={s}>{s}</option>
+              <option key={s} value={s} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+                {s}
+              </option>
             ))}
           </select>
 
@@ -74,10 +76,12 @@ export const SmartFilterBar: React.FC<SmartFilterBarProps> = ({
           <select
             value={filters.region}
             onChange={(e) => onChange({ ...filters, region: e.target.value })}
-            className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition"
+            className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition cursor-pointer"
           >
             {regions.map((r) => (
-              <option key={r} value={r}>{r}</option>
+              <option key={r} value={r} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+                {r}
+              </option>
             ))}
           </select>
 
@@ -85,10 +89,12 @@ export const SmartFilterBar: React.FC<SmartFilterBarProps> = ({
           <select
             value={filters.metricFocus}
             onChange={(e) => onChange({ ...filters, metricFocus: e.target.value })}
-            className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition hidden sm:inline-block"
+            className="bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 rounded-lg px-2.5 py-1 text-xs focus:outline-none focus:border-blue-500 transition hidden sm:inline-block cursor-pointer"
           >
             {metrics.map((m) => (
-              <option key={m} value={m}>{m}</option>
+              <option key={m} value={m} className="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100">
+                {m}
+              </option>
             ))}
           </select>
 

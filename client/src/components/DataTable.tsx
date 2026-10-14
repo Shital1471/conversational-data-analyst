@@ -266,9 +266,9 @@ export const DataTable: React.FC<DataTableProps> = ({
               }}
               className="bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-800 rounded px-2 py-0.5 text-xs text-slate-700 dark:text-slate-300 focus:outline-none"
             >
-              <option value={10}>10</option>
-              <option value={25}>25</option>
-              <option value={-1}>All</option>
+              <option value={10} className="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100">10</option>
+              <option value={25} className="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100">25</option>
+              <option value={-1} className="bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100">All</option>
             </select>
             <span>
               Page {currentPage} of {totalPages}
